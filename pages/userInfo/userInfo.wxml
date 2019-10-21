@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+<view class="usermotto">
+    <mp-cells ext-class="my-cells" title="带说明的列表项">
+      <mp-cell value="标题文字" foot="说明文字"></mp-cell>
+      <mp-cell>
+          <view>标题文字（使用slot）</view>
+          <view slot="foot">说明文字</view>
+      </mp-cell>
+  </mp-cells>
+</view>

@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/userInfo/userInfo",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/info/info",
+    "pages/news/news",
+    "pages/page",
+    "pages/node_modules/index",
+    "custom-tab-bar/index"
+  ],
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "组件"
+      },
+      {
+        "pagePath": "pages/userInfo/userInfo",
+        "text": "接口"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

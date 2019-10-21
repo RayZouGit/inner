@@ -1,0 +1,32 @@
+{
+  "name": "inner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged",
+    "lint": "eslint -c .eslintrc /pages"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^3.12.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "lint-staged": "^6.0.0",
+    "prettier": "^1.8.2"
+  },
+  "lint-staged": {
+    "pages/**/*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "author": "2410823638@qq.com",
+  "license": "ISC",
+  "dependencies": {
+    "weui-miniprogram": "^0.1.12"
+  }
+}

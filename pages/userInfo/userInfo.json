@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "mp-cell": "../components/cell/cell",
+    "mp-cells": "../components/cells/cells"
+  },
+  "navigationBarTitleText": "用户信息",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black"
+}
