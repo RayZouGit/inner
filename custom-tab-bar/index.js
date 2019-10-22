@@ -9,7 +9,7 @@ Component({
       selectedIconPath: "/image/icon_component_HL.png",
       text: "组件"
     }, {
-        pagePath: "/pages/userInfo/userInfo",
+      pagePath: "/pages/news/news",
       iconPath: "/image/icon_API.png",
       selectedIconPath: "/image/icon_API_HL.png",
       text: "接口"
@@ -21,7 +21,7 @@ Component({
     switchTab(e) {
       const data = e.currentTarget.dataset
       const url = data.path
-      wx.switchTab({ url })
+      wx.switchTab({url})
       this.setData({
         selected: data.index
       })

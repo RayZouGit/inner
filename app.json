@@ -1,12 +1,11 @@
 {
   "pages": [
-    "pages/userInfo/userInfo",
     "pages/index/index",
+    "pages/userInfo/userInfo",
     "pages/logs/logs",
     "pages/info/info",
     "pages/news/news",
     "pages/page",
-    "pages/node_modules/index",
     "custom-tab-bar/index"
   ],
   "tabBar": {
@@ -18,10 +17,14 @@
     "list": [
       {
         "pagePath": "pages/index/index",
+        "iconPath": "image/icon_component.png",
+        "selectedIconPath": "image/icon_component_HL.png",
         "text": "组件"
       },
       {
-        "pagePath": "pages/userInfo/userInfo",
+        "pagePath": "pages/news/news",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png",
         "text": "接口"
       }
     ]
